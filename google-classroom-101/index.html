@@ -46,21 +46,22 @@
 		<div class="reveal pikestreet">
 
 			<div id="tabzilla">
-    		<a href="https://www.mozilla.org/">KOTESOL</a>
+    		<a href="https://aaron.kr/">KOTESOL</a>
 			</div>
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
 				<!-- #1 : Title Slide -->
-				<section data-background="assets/classroom-about.png." data-background-video="assets/Previewing-a-new-Classroom-by-Google.mp4" data-state="no-title-footer">
+				<section data-background="assets/classroom-about.png" data-background-video="https://www.youtube.com/watch?v=JUiLc0If0CI" data-state="no-title-footer" data-background-video-muted>
 					<div class="circle">
 						<div class="accent">
-							<br>
+							<!-- <br> -->
 							<img class="logo" src="assets/google-product-logos/logo_classroom.png">
 							<h1>Google <br>Classroom 101</h1>
 							<h2>KOTESOL</h2>
 							<small>Aaron Snowberger<br />Google Certified Trainer</small>
+							<cite data-cite>Press <code>spacebar</code> to cycle through the slides</cite>
 						</div>
 					</div>
 
@@ -69,18 +70,18 @@
 					</aside>
 				</section>
 
-				<section>
-					<h2>
-						<a target="_blank" href="http://aaron.kr/talks/kotesol">
-							<code>aaron.kr/talks/kotesol</code>
-						</a>
-					</h2>
-				</section>
-
 				<!-- Vertical Slides (Self Intro)-->
 				<section>
+					<section data-background="https://www.youtube.com/watch?v=JUiLc0If0CI">
+						<h2>
+							<a target="_blank" href="http://aaron.kr/talks/kotesol">
+								<code>aaron.kr/talks/kotesol</code>
+							</a>
+						</h2>
+					</section>
+
 					<!-- #2 : Google Certified -->
-					<section>
+					<section data-background-transition="zoom">
 						<div class="speaker-name">
 							<img class="logo" src="assets/aaron-400x400.png">
 							<p><strong>Aaron Snowberger</strong></p>
@@ -145,6 +146,35 @@
 					</section>
 				</section>
 
+				<section>
+					<section>
+						<h1>Overview</h1>
+						<ol>
+							<li>Teacher View</li>
+							<li>Student View</li>
+							<li>Other Suggestions</li>
+						</ol>
+					</section>
+
+					<section>
+						<h2 class="fragment bolder">Caveat</h2>
+						<img class="fragment current-visible g-logo" src="assets/500px-Google-G-Logo.png" />
+					</section>
+				</section>
+
+				<section data-background="#4285f4">
+					<section>
+						<hgroup class="accent big-question">
+							<h1 style="font-size: 4em">Teacher</h1>
+							<h2 style="font-size: 3.2em">Viewpoint</h2>
+						</hgroup>
+					</section>
+
+					<section data-background-video="assets/video/Previewing-a-new-Classroom-by-Google.mp4">
+						<cite>YouTube.com</cite>
+					</section>
+				</section>
+
 				<!-- #6 : WHY Google Classroom -->
 				<section data-background="#db4437">
 					<div class="accent join-class">
@@ -154,10 +184,6 @@
 				</section>
 
 				<!-- #7 : Quote -->
-				<section>
-					<h2 class="fragment">Caveat</h2>
-					<img class="fragment current-visible g-logo" src="assets/500px-Google-G-Logo.png" />
-				</section>
 
 				<!-- #8 : Caveat -->
 				<section>
@@ -589,7 +615,7 @@ Reveal.addEventListener( 'customevent', function() {
 					// { src: '../lib/reveal-pikest/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					// { src: '../lib/reveal-pikest/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: '../lib/reveal-pikest/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					// { src: '../lib/reveal-pikest/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../lib/reveal-pikest/plugin/zoom-js/zoom.js', async: true },
 					// { src: '../lib/reveal-pikest/plugin/notes/notes.js', async: true },
 					{ src: '../lib/reveal-pikest/plugin/menu/menu.js' },
 					{ src: '../lib/reveal-pikest/plugin/elapsed-time-bar/elapsed-time-bar.js' },
